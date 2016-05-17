@@ -1,6 +1,7 @@
 package consola;
 
 import entidad.Numero;
+import entidad.Producto;
 import entidad.Resta;
 import entidad.Suma;
 import interfaz.IExpresion;
@@ -60,5 +61,9 @@ public class App {
 //		Ejemplo clase Resta
 		IExpresion r1 = new Resta(s1,n1); 
 		System.out.println(r1.getEcuacion());
+		
+//		Ejemplo clase Producto
+		IExpresion p1 = new Producto(s1,r1); 
+		System.out.println(p1.getEcuacion());
 	}
 }
