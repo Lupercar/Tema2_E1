@@ -1,5 +1,8 @@
 package consola;
 
+import entidad.Numero;
+import interfaz.IExpresion;
+
 /**
  * Se quiere modelizar las estructuras de datos para un programa que trabajará
  * con expresiones matemáticas.
@@ -43,5 +46,9 @@ package consola;
  *
  */
 public class App {
-
+	public static void main(String[] args) {
+//		Ejemplo clase Numero
+		IExpresion n1 = new Numero(7.5);
+		System.out.println(n1.getEcuacion());
+	}
 }
