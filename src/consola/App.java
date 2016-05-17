@@ -1,5 +1,6 @@
 package consola;
 
+import entidad.Division;
 import entidad.Numero;
 import entidad.Producto;
 import entidad.Resta;
@@ -65,5 +66,9 @@ public class App {
 //		Ejemplo clase Producto
 		IExpresion p1 = new Producto(s1,r1); 
 		System.out.println(p1.getEcuacion());
+		
+//		Ejemplo clase Division
+		IExpresion d1 = new Division(p1, r1); 
+		System.out.println(d1.getEcuacion());
 	}
 }
