@@ -1,6 +1,7 @@
 package consola;
 
 import entidad.Numero;
+import entidad.Suma;
 import interfaz.IExpresion;
 
 /**
@@ -50,5 +51,9 @@ public class App {
 //		Ejemplo clase Numero
 		IExpresion n1 = new Numero(7.5);
 		System.out.println(n1.getEcuacion());
+		
+//		Ejemplo clase Suma
+		IExpresion s1 = new Suma(n1, new Numero(4.3)); 
+		System.out.println(s1.getEcuacion());
 	}
 }

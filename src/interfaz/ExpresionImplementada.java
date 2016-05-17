@@ -6,6 +6,6 @@ public abstract class ExpresionImplementada implements IExpresion {
 	@Override
 	public String getEcuacion() {
 		// TODO Auto-generated method stub
-		return getExpresion() + " = "+ getExpresion();
+		return getExpresion() + " = "+ getValor();
 	}
 }
